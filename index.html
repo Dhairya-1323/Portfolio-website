@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhairya's Portfolio</title>
+    <meta name="description" content="Dhairya's Developer Portfolio - Showcasing projects, skills, and academic background.">
+    <meta name="keywords" content="portfolio, developer, student, projects, web development, CSE">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            background-color: rgb(175, 57, 76);
+            color: white;
+            font-family: "Poppins", sans-serif;
+        }
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+            background-color: rgb(215, 137, 150);
+        }
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            list-style: none;
+            margin: 0 27px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+        nav ul li a:hover {
+            color: rgb(245, 52, 84);
+            font-size: 1.02rem;
+        }
+        main hr {
+            border: 0;
+            background: rgb(245, 195, 204);
+            height: 1.4px;
+            margin: 40px 84px;
+        }
+        .btn{
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+        }
+        .left {
+            font-size: 1.2rem;
+        }
+        .first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 40px 0;
+            flex-wrap: wrap;
+        }
+        .first > div {
+            width: 30%;
+        }
+        .leftSection {
+            font-size: 2rem;
+        }
+        .leftSection .buttons {
+            padding: 50px 0;
+        }
+        .leftSection .btn {
+            padding: 12px 20px;
+            margin-right: 10px;
+            background-color: rgb(239, 119, 139);
+            color: white;
+            border: 2px solid white;
+            border-radius: 5px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+        .leftSection .btn:hover{
+            transform: scale(1.05);
+        }
+        .rightSection img {
+            width: 100%;
+            max-width: 300px;
+            margin: 38px auto;
+        }
+        .purple {
+            color: rgb(245, 176, 216);
+        }
+        .textgrey {
+            color: rgb(250, 187, 213);
+        }
+        #element {
+            color: rgb(245, 176, 216);
+        }
+        .section {
+            max-width: 80vw;
+            margin: auto;
+            padding: 40px 0;
+        }
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+        .project-card, .contact-form {
+            background-color: rgb(215, 137, 150);
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+        .project-card h3 {
+            margin-bottom: 5px;
+        }
+        .project-card a {
+            color: white;
+            text-decoration: underline;
+        }
+        .box {
+            background: rgb(248, 239, 239);
+            height: 9px;
+            margin: 56px 0;
+            display: flex;
+            justify-content: space-around;
+        }
+        .vertical {
+            height: 100px;
+            width: 1px;
+            background-color: white;
+            position: relative;
+        }
+        .image-top {
+            width: 25px;
+            position: absolute;
+            top: -30px;
+            left: -12px;
+        }
+        .vertical-title {
+            position: absolute;
+            top: 40px;
+            width: 150px;
+            font-size: 16px;
+            color: white;
+        }
+        .vertical-desc {
+            position: absolute;
+            top: 70px;
+            color: rgb(169, 250, 240);
+            width: 150px;
+            font-size: 15px;
+        }
+        section.btn{
+            font-family: sans-serif;
+        }
+        #contact .contact-form .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        #contact .contact-form .btn:hover {
+            background-color: #388e3c;
+            transform: scale(1.05);
+        }
+        footer {
+            background-color: pink;
+            padding: 20px;
+        }
+        .footer {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        .footer div {
+            margin: 10px;
+        }
+        .footer ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .footer ul li a {
+            color: rgb(70, 70, 70
+            );
+            text-decoration: none;
+        }
+        .footer-rights {
+            text-align: center;
+            color: rgb(90, 89, 89);
+            padding: 15px 0;
+        }
+        form input, form textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+        }
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+            .first {
+                flex-direction: column;
+            }
+            .first > div {
+                width: 80%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Dhairya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="first">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Dhairya</span>
+                <div>and I am a 3rd year CSE Student</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <a href="resumee_dhairya.pdf" download><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/Dhairya-1323" target="_blank"><button class="btn">Visit GitHub</button></a>
+                </div>
+            </div>
+            <div class="rightSection"><img src="Student img.png" alt="Student Image"></div>
+        </section>
+
+        <hr>
+
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>I'm a passionate 3rd-year Computer Science student who enjoys developing creative applications, exploring new technologies, and working on real-world projects. I aim to build impactful solutions and continue growing as a full-stack developer and AI enthusiast.</p>
+        </section>
+
+        <section class="section" id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Expense Splitter</h3>
+                <p>A simple web application to manage and split shared expenses among group members using HTML, CSS, MySQL and JavaScript.</p>
+                <a href="https://github.com/Dhairya-1323/Expense-Splitter" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Laptop Price Predictor App</h3>
+                <p>Web-based tool to predict laptop prices using machine learning and Streamlit, trained on real-world data from Kaggle.</p>
+                <a href="https://github.com/Dhairya-1323/Laptop_Price_Predictor_App" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+
+        <section class="section" id="academics">
+            <h2>Academic Record</h2>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="10exam.png" alt="">
+                    <div class="vertical-title"><b>&nbsp;&nbsp;10th Examination</b></div>
+                    <div class="vertical-desc">&nbsp;&nbsp;CBSE | 2019 | 93.8%</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="10exam.png" alt="">
+                    <div class="vertical-title"><b>&nbsp;&nbsp;12th Examination</b></div>
+                    <div class="vertical-desc">&nbsp;&nbsp;CBSE | 2021 | 94.6%</div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="contact">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/xqaqnwor" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>C.V. Raman Global University</i>', 'Bhubaneshwar', 'Odisha'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <footer>
+        <div class="footer">
+            <div>
+                <h4>Dhairya's Portfolio</h4>
+                <p>Thank you for visiting!</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email: sharmadhairya741@gmail.com</li>
+                    <li><a href="http://www.linkedin.com/in/dhairya-sharma-61a560331" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/Dhairya-1323" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li>Web Development</li>
+                    <li>UI Design</li>
+                    <li>Java Backend</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            &copy; 2025 dhairyaportfolio.com || All Rights Reserved
+        </div>
+    </footer>
+</body>
+</html>
