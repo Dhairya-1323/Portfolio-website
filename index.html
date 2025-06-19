@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhairya's Portfolio</title>
+    <meta name="description"
+        content="Dhairya's Developer Portfolio - Showcasing projects, skills, and academic background.">
+    <meta name="keywords" content="portfolio, developer, student, projects, web development, CSE">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Dhairya's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#academics">Academics</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main id="home">
+        <section class="first">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Dhairya</span>
+                <div>and I am a final year CSE Student</div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn" onclick="showResumeModal()">View Resume</button>
+                    <a href="https://github.com/Dhairya-1323" target="_blank">
+                        <button class="btn">Visit GitHub</button>
+                    </a>
+                </div>
+            </div>
+            <div class="rightSection"><img src="Student img.png" alt="Student Image"></div>
+        </section>
+
+        <hr>
+
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>I'm a passionate 3rd-year Computer Science student who enjoys developing creative applications, exploring
+                new technologies, and working on real-world projects. I aim to build impactful solutions and continue
+                growing as a full-stack developer and AI enthusiast.</p>
+        </section>
+
+        <section class="section" id="projects">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Expense Splitter</h3>
+                <p>A simple web application to manage and split shared expenses among group members using HTML, CSS,
+                    MySQL and JavaScript.</p>
+                <a href="https://github.com/Dhairya-1323/Expense-Splitter" target="_blank">View on GitHub</a>
+            </div>
+            <div class="project-card">
+                <h3>Laptop Price Predictor App</h3>
+                <p>Web-based tool to predict laptop prices using machine learning and Streamlit, trained on real-world
+                    data from Kaggle.</p>
+                <a href="https://github.com/Dhairya-1323/Laptop_Price_Predictor_App" target="_blank">View on GitHub</a>
+            </div>
+        </section>
+        <section class="section" id="skills">
+            <div class="section-header">
+                <h2>Skills & Certifications</h2>
+            </div>
+            <div class="project-card skills-container">
+                <ul class="skills-list">
+                    <li><strong>Languages:</strong> Java, SQL, C, HTML, CSS, JavaScript</li>
+                    <li><strong>Databases:</strong> MySQL, Oracle</li>
+                    <li><strong>Tools/OS:</strong> IntelliJ IDEA, VS Code, Google Colab</li>
+                    <li><strong>Practices:</strong> OOP, REST APIs, Responsive Design</li>
+                </ul>
+                <div class="cert-btn-wrapper">
+                    <a href="certifications.html" target="_blank">
+                        <button class="btn cert-btn">View Certifications</button>
+                    </a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="section" id="academics">
+            <h2>Academic Record</h2>
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="10exam.png" alt="">
+                    <div class="vertical-title"><b>&nbsp;&nbsp;10th Examination</b></div>
+                    <div class="vertical-desc">&nbsp;&nbsp;CBSE | 2019 | 93.8%</div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="10exam.png" alt="">
+                    <div class="vertical-title"><b>&nbsp;&nbsp;12th Examination</b></div>
+                    <div class="vertical-desc">&nbsp;&nbsp;CBSE | 2021 | 94.6%</div>
+                </div>
+                 <div class="vertical">
+                    <img class="image-top" src="10exam.png" alt="">
+                    <div class="vertical-title"><b>&nbsp;&nbsp;Graduation</b></div>
+                    <div class="vertical-desc">&nbsp;&nbsp;CGU | 2026 | 9.32</div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="contact">
+            <h2>Contact Me</h2>
+            <form action="https://formspree.io/f/xqaqnwor" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="_replyto" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </section>
+    </main>
+    <div id="resumeModal" class="modal">
+        <span class="modal-close" onclick="closeResumeModal()">×</span>
+        <div class="modal-content-wrapper">
+            <iframe src="Dsharma_resume.pdf" class="resume-preview"></iframe>
+            <a href="Dsharma_resume.pdf" download title="Download Resume">
+                <img src="download-icon.png" class="download-icon" alt="Download Resume" />
+            </a>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script src="script.js"></script>
+
+    <footer>
+        <div class="footer">
+            <div>
+                <h4>Dhairya's Portfolio</h4>
+                <p>Thank you for visiting!</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <ul>
+                    <li>Email: sharmadhairya741@gmail.com</li>
+                    <li><a href="http://www.linkedin.com/in/dhairya-sharma-61a560331" target="_blank">LinkedIn</a></li>
+                    <li><a href="https://github.com/Dhairya-1323" target="_blank">GitHub</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Services</h4>
+                <ul>
+                    <li>Web Development</li>
+                    <li>UI Design</li>
+                    <li>Java Backend</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            &copy; 2025 dhairyaportfolio.com || All Rights Reserved
+        </div>
+    </footer>
+</body>
+
+</html>

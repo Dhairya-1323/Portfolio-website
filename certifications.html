@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dhairya's Certifications</title>
+  <link rel="stylesheet" href="certificate.css" />
+</head>
+<body>
+
+<header>
+ <nav>
+  <div class="left">Licenses & Certifications</div>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+<main class="section" id="skills">
+  <!-- Certificate 1 -->
+  <div class="cert-block">
+    <div class="cert-details">
+      <h3>Google UX Design</h3>
+      <ul>
+        <li><strong>Issuer:</strong> Coursera</li>
+        <li><strong>Issued:</strong> September 2024</li>
+      </ul>
+      <button class="show-cred-btn" onclick="showModal('certs/google ux.png')">Show Certificate</button>
+    </div>
+    <div class="cert-preview">
+      <img src="certs/google ux.png" class="cert-thumb" alt="Preview" />
+    </div>
+  </div>
+
+  <!-- Certificate 2 -->
+  <div class="cert-block">
+    <div class="cert-details">
+      <h3>Data Structures and Algorithm using Java</h3>
+      <ul>
+        <li><strong>Issuer:</strong> Infosys Springboard</li>
+        <li><strong>Issued:</strong> June 2025</li>
+      </ul>
+      <button class="show-cred-btn" onclick="showModal('certs/DSA using java.png')">Show Certificate</button>
+    </div>
+    <div class="cert-preview">
+      <img src="certs/DSA using java.png" class="cert-thumb" alt="Preview" />
+    </div>
+  </div>
+   <!-- Certificate 3 -->
+  <div class="cert-block">
+    <div class="cert-details">
+      <h3>Microsoft Azure AI Essentials Professional Certificate by Microsoft and LinkedIn </h3>
+      <ul>
+        <li><strong>Issuer:</strong> LinkedIn Learning | Microsoft</li>
+        <li><strong>Issued:</strong> May 2025</li>
+      </ul>
+      <button class="show-cred-btn" onclick="showModal('certs/Microsoft azure ML')">Show Certificate</button>
+    </div>
+    <div class="cert-preview">
+      <img src="certs/Microsoft azure ML.png" class="cert-thumb" alt="Preview" />
+    </div>
+  </div>
+  <!-- Certificate 4 -->
+  <div class="cert-block">
+    <div class="cert-details">
+      <h3>SQL Intermediate </h3>
+      <ul>
+        <li><strong>Issuer:</strong> Sololearn</li>
+        <li><strong>Issued:</strong> May 2025</li>
+      </ul>
+      <button class="show-cred-btn" onclick="showModal('certs/sql.png')">Show Certificate</button>
+    </div>
+    <div class="cert-preview">
+      <img src="certs/sql.png" class="cert-thumb" alt="Preview" />
+    </div>
+  </div>
+  <!-- Certificate 5 -->
+  <div class="cert-block">
+    <div class="cert-details">
+      <h3>Programming using Java</h3>
+      <ul>
+        <li><strong>Issuer:</strong> Sololearn</li>
+        <li><strong>Issued:</strong> May 2025</li>
+      </ul>
+      <button class="show-cred-btn" onclick="showModal('certs/java.png')">Show Certificate</button>
+    </div>
+    <div class="cert-preview">
+      <img src="certs/java.png" class="cert-thumb" alt="Preview" />
+    </div>
+  </div>
+</main>
+
+<div id="modal" class="modal">
+  <span class="modal-close" onclick="closeModal()">×</span>
+  <img id="modal-image" class="modal-content" alt="Certificate Full Preview" />
+</div>
+
+<footer>
+  <div class="footer-rights">
+    &copy; 2025 dhairyaportfolio.com || All Rights Reserved
+  </div>
+</footer>
+
+<script src="certs.js"></script>
+</body>
+</html>
