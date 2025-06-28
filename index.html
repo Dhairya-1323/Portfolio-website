@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
     <header>
         <nav>
@@ -46,27 +44,24 @@
             </div>
             <div class="rightSection"><img src="Student img.png" alt="Student Image"></div>
         </section>
-
         <hr>
-
         <section class="section" id="about">
             <h2>About Me</h2>
             <p>I'm a passionate 3rd-year Computer Science student who enjoys developing creative applications, exploring
                 new technologies, and working on real-world projects. I aim to build impactful solutions and continue
                 growing as a full-stack developer and AI enthusiast.</p>
         </section>
-
         <section class="section" id="projects">
             <h2>Projects</h2>
             <div class="project-card">
                 <h3>Expense Splitter</h3>
-                <p>A simple web application to manage and split shared expenses among group members using HTML, CSS,
+                <p>A web application to manage and split shared expenses among group members using HTML, CSS,
                     MySQL and JavaScript.</p>
                 <a href="https://github.com/Dhairya-1323/Expense-Splitter" target="_blank">View on GitHub</a>
             </div>
             <div class="project-card">
                 <h3>Laptop Price Predictor App</h3>
-                <p>Web-based tool to predict laptop prices using machine learning and Streamlit, trained on real-world
+                <p>A web-based tool to predict laptop prices using machine learning and Streamlit, trained on real-world
                     data from Kaggle.</p>
                 <a href="https://github.com/Dhairya-1323/Laptop_Price_Predictor_App" target="_blank">View on GitHub</a>
             </div>
@@ -75,22 +70,38 @@
             <div class="section-header">
                 <h2>Skills & Certifications</h2>
             </div>
-            <div class="project-card skills-container">
-                <ul class="skills-list">
-                    <li><strong>Languages:</strong> Java, SQL, C, HTML, CSS, JavaScript</li>
-                    <li><strong>Databases:</strong> MySQL, Oracle</li>
-                    <li><strong>Tools/OS:</strong> IntelliJ IDEA, VS Code, Google Colab</li>
-                    <li><strong>Practices:</strong> OOP, REST APIs, Responsive Design</li>
-                </ul>
-                <div class="cert-btn-wrapper">
-                    <a href="certifications.html" target="_blank">
-                        <button class="btn cert-btn">View Certifications</button>
-                    </a>
+            <div class="skills-grid">
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">Languages</div>
+                        <div class="flip-back">Java, SQL, C, HTML, CSS, JavaScript</div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">Databases</div>
+                        <div class="flip-back">MySQL, Oracle</div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">Tools/OS</div>
+                        <div class="flip-back">VS Code, IntelliJ, Google Colab</div>
+                    </div>
+                </div>
+                <div class="flip-card">
+                    <div class="flip-inner">
+                        <div class="flip-front">Practices</div>
+                        <div class="flip-back">OOP, REST APIs, Responsive Design</div>
+                    </div>
                 </div>
             </div>
-
+            <div class="cert-btn-wrapper centered">
+                <a href="certifications.html" target="_blank">
+                    <button class="btn cert-btn">View Certifications</button>
+                </a>
+            </div>
         </section>
-
         <section class="section" id="academics">
             <h2>Academic Record</h2>
             <div class="box">
@@ -104,7 +115,7 @@
                     <div class="vertical-title"><b>&nbsp;&nbsp;12th Examination</b></div>
                     <div class="vertical-desc">&nbsp;&nbsp;CBSE | 2021 | 94.6%</div>
                 </div>
-                 <div class="vertical">
+                <div class="vertical">
                     <img class="image-top" src="10exam.png" alt="">
                     <div class="vertical-title"><b>&nbsp;&nbsp;Graduation</b></div>
                     <div class="vertical-desc">&nbsp;&nbsp;CGU | 2026 | 9.32</div>
@@ -130,11 +141,8 @@
             </a>
         </div>
     </div>
-
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-
     <script src="script.js"></script>
-
     <footer>
         <div class="footer">
             <div>
@@ -163,5 +171,4 @@
         </div>
     </footer>
 </body>
-
 </html>
